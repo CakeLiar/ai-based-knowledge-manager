@@ -16,13 +16,13 @@ import assert from "assert";
 import { get } from "http";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCMmuWCaEudhn--lYhAzpogGW2ITG3lm8A",
-    authDomain: "testingmemoapp.firebaseapp.com",
-    projectId: "testingmemoapp",
-    storageBucket: "testingmemoapp.appspot.com",
-    messagingSenderId: "505951573899",
-    appId: "1:505951573899:web:c344b7286e7fada86c418e",
-    measurementId: "G-MVH19HE5L3"
+    apiKey: process.env.FIREBASE_APIKEY,
+    authDomain: process.env.FIREBASE_AUTHDOMAIN,
+    projectId: process.env.FIREBASE_PROJECTID,
+    storageBucket: process.env.FIREBASE_STORAGEBUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
+    appId: process.env.FIREBASE_APPID,
+    measurementId: process.env.FIREBASE_MEASUREMENTID
 };
 
 const app = initializeApp(firebaseConfig);
