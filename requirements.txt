@@ -1,0 +1,12 @@
+# Add your project dependencies here
+streamlit==1.36.0
+openai==1.35.13
+python-dotenv==1.0.1
+langchain==0.2.7
+pinecone
+langchain-community==0.2.7
+langchain_openai
+firebase_admin
+beautifulsoup4==4.12.3
+flask
+flask-cors
